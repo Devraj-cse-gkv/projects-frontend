@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pacifico">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="/resources/logo.png" type="png">
+  <title>nav-bar1</title>
+</head>
+
+<body>
+  <nav>
+    <div class="container">
+      <div class="logo">
+        <a id="menubtn" onclick="menu()">
+          <img id="menuIcon" src="/resources/icons8-hamburger-menu-48.png" alt="">
+        </a>
+        <img src="/resources/logo.png" alt="">
+      </div>
+      <div class="name">
+        Welcome
+      </div>
+      <div class="nav-links" id="nav-links">
+        <li><a href="">Home</a></li>
+        <li><a href="">About Us</a></li>
+        <li><a href="">Portfolio</a></li>
+        <li class="dropdown">
+          <a href="#" id="toggleDrop" onclick="toggleDrop()">Pages
+            <img id="dropdown-icon" src="/resources/icons8-dropdown-50.png" alt=""></a>
+          <ul class="dropdown-menu hide" id="dropdown-menu">
+            <li><a href="#">Service 1</a></li>
+            <li><a href="#">Service 2</a></li>
+            <li><a href="#">Service 3</a></li>
+          </ul>
+        </li>
+        <li><a href="">Blogs</a></li>
+      </div>
+      <div class="user-menu">
+        
+        <a href="#"><img src="/resources/icons8-notification-64.png" alt=""></a>
+        <a href="#"><img src="/resources/icons8-user-64.png" alt=""></a>
+      </div>
+    </div>
+  </nav>
+  </div>
+  <hr>
+  <main></main>
+  <script src="script.js"></script>
+</body>
+
+</html>

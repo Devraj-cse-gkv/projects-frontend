@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link rel="shortcut icon" href="/resources/logo.png" type="png">
+	<title>Login | Sign up</title>
+</head>
+
+<body>
+	<main>
+		<div class="container">
+			<div class="logo" id="logo">
+				<img src="resources/logo.png" alt="logo">
+			</div>
+			<hr>
+			<form action="">
+				<div class="form" id="signupForm">
+					<div class="input-group">
+						<label for="name">Name</label>
+						<input type="text" id="name">
+					</div>
+					<div class="input-group">
+						<label for="email">Email</label>
+						<input type="email" id="email">
+					</div>
+					<div class="input-group">
+						<label for="pswd">Password:</label>
+						<input type="password" id="pswd">
+					</div>
+					<div class="input-group">
+						<label for="cpswd">Confirm password:</label>
+						<input type="password" id="cpswd">
+					</div>
+					<div class="button">
+						<button type="submit">Submit</button>
+					</div>
+				</div>
+			</form>
+			<form action="">
+				<div class="form hidden" id="loginForm">
+					<div class="input-group">
+						<label for="loginEmail">Email</label>
+						<input type="email" id="loginEmail">
+					</div>
+					<div class="input-group">
+						<label for="loginPswd">Password:</label>
+						<input type="password" id="loginPswd">
+					</div>
+					<div class="button">
+						<button type="submit">Login</button>
+					</div>
+				</div>
+			</form>
+			<div class="toggle">
+				<!-- Toggle Button -->
+				<a onclick="toggleForms()" id="toggle">Switch to Login</a>
+			</div>
+			<hr>
+			<div class="details">
+				<p>General Instructions:</p>
+				<ul>
+					<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur ex suscipit eos illo?</li>
+					<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur ex suscipit eos illo?</li>
+					<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur ex suscipit eos illo?</li>
+				</ul>
+			</div>
+			<hr>
+			<div class="help">
+				<a href="">Need help? Contact us</a>
+				<a onclick="openModal()">Forget password</a>
+			</div>
+		</div>
+
+	</main>
+	<div id="myModal" class="modal">
+		<div class="modal-content">
+			<span class="close" onclick="closeModal()">&times;</span>
+			<h2>Forgot Password</h2>
+			<p>Please enter your email address below. We will send you a reset link.</p>
+			<form action="">
+				<div class="input-group">
+					<label for="resetEmail">Email</label>
+					<input type="email" id="resetEmail">
+				</div>
+				<div class="button">
+					<button onclick="sendResetLink()">Send Reset Link</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+
+</html>
